@@ -1,7 +1,7 @@
 package ca.nait.dmit.dmit2015azureproject;
 
 import java.io.*;
-
+//import is to java as using is to c#
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
