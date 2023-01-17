@@ -36,11 +36,11 @@ public class Circle {
         this.radius = radius;
     }
 
-    public double Area(){
+    public double area(){
         return Math.PI * radius * radius;
     }
 
-    public double Perimeter(){
+    public double perimeter(){
         return 2 * Math.PI * radius;
     }
 
@@ -50,8 +50,8 @@ public class Circle {
         //Area should be 3.1459
         //Perimeter should be 6.28
         System.out.printf("The radius of circle1 is %s\n",circle1.getRadius()); // \n is new line
-        System.out.printf("The area of circle1 is %.5f\n", circle1.Area()); //.5f does five decimal places
-        System.out.printf("The perimeter of circle1 is %.2f\n\n", circle1.Perimeter()); //.2 does to two decimal places
+        System.out.printf("The area of circle1 is %.5f\n", circle1.area()); //.5f does five decimal places
+        System.out.printf("The perimeter of circle1 is %.2f\n\n", circle1.perimeter()); //.2 does to two decimal places
 
         try{
             //Change the radius of circle1 to 5
@@ -60,8 +60,8 @@ public class Circle {
             //Area should be 78.53982
             //Perimeter should be 31.41593
             System.out.printf("The radius of circle1 is %s\n",circle1.getRadius()); // %s is string   |  \n is new line
-            System.out.printf("The area of circle1 is %.5f\n", circle1.Area()); //.5f does five decimal places
-            System.out.printf("The perimeter of circle1 is %.5f\n\n", circle1.Perimeter()); //.2 does to two decimal places
+            System.out.printf("The area of circle1 is %.5f\n", circle1.area()); //.5f does five decimal places
+            System.out.printf("The perimeter of circle1 is %.5f\n\n", circle1.perimeter()); //.2 does to two decimal places
         }catch(Exception ex){
 
         }
