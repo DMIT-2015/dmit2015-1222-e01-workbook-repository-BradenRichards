@@ -2,9 +2,17 @@ package dmit2015.model;
 
 public class Rectangle {
 
+    public void setLength(double length) {
+        this.length = length;
+    }
+
     private double length;
 
     public double getLength(){return length;}
+
+    public void setWidth(double width) {
+        this.width = width;
+    }
 
     private double width;
 
@@ -12,11 +20,11 @@ public class Rectangle {
         return width;
     }
 
-    public double area = length * width;
+    public double area() {return length * width;}
 
-    public double perimeter = (2*length) + (2*width);
+    public double perimeter() {return (2*length) + (2*width);}
 
-    public double diagonalLength = Math.sqrt((width*width)+(length*length));
+    public double diagonal() { return Math.sqrt((width*width)+(length*length));}
 
     public Rectangle() {this.length = 1; this.width = 1;}
 
@@ -25,5 +33,8 @@ public class Rectangle {
         this.width = width;
     }
 
+    public static void main(String[] args){
+
+    }
 
 }

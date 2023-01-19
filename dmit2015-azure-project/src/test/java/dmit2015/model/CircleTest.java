@@ -32,5 +32,6 @@ class CircleTest {
 // Assert
             assertEquals(expectedArea, circle1.area(), 0.005);
         }
+
     }
 }
