@@ -16,8 +16,12 @@ import java.io.Serializable;
 public class CircleRequestScopedController {
 
     @Getter @Setter
+
+    private double radius;
+
     private Circle currentCircle = new Circle();
     public String showArea(){
+        var currentCircle = new Circle((radius));
         Messages.addGlobalInfo("The area of the circle with a {0} radius is {1}",
                 currentCircle.getRadius(), currentCircle.area());
         return null;
