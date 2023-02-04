@@ -38,6 +38,7 @@ public class RectangleRequestScopedView {
 
     public void onClear() {
         // Set all fields to default values
+        currentRectangle = new Rectangle();
     }
 
 }
